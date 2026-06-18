@@ -50,5 +50,6 @@ Offline caching
 ## 🚀 Installation & Usage
 1. Clone the repository:
    ```bash
+   git clone https://github.com/shahilrawat623/CURRENCY-CALCULATOR.git
    
 
