@@ -14,6 +14,17 @@ for (let select of dropdown){
         if(select.name === "To" && currCode === "INR"){
             opn.selected = "selected"
         }
-        
     }
+    select.addEventListener("change",(evt)=>{
+        flag(evt.target)
+    })
+}
+
+const flag = (element)=>{
+    let currCode = element.value
+    let countryCode = countryList[currCode];
+    console.log(countryCode)
+    let img = document.querySelector("img");
+    let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`
+    img.src = newSrc;
 }
