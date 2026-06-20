@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CURRENCY CONVERTER</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id="box-container">
@@ -19,19 +20,19 @@
                     <div class="Select-Container">
                         <img src="https://flagsapi.com/IN/flat/64.png">
                         <select name="From">
-                            <option value="INR" selected>INR</option>
-                            <option value="USD">USD</option>
+                            <!-- <option value="INR" >INR</option>
+                            <option value="USD">USD</option> -->
                         </select>
                     </div>
                 </div>
-
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
                 <div class="To">
                     <p>To</p>
                     <div class="Select-Container">
                         <img src="https://flagsapi.com/US/flat/64.png">
                         <select name="To">
-                            <option value="INR">INR</option>
-                            <option value="USD" selected>USD</option>
+                            <!-- <option value="INR">INR</option>
+                            <option value="USD" >USD</option> -->
                         </select>
                     </div>
                 </div>
@@ -41,6 +42,7 @@
             <button>Get Exchange Rate</button>
         </form>
     </div>
+    <script src="codes.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
