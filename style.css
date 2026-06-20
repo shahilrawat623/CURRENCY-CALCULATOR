@@ -88,3 +88,11 @@ button{
     color: #ffff;
     font-size: 1rem;
 }
+
+button:hover{
+    opacity: .9;
+}
+
+button:active{
+    transform: scale(.98);
+}
