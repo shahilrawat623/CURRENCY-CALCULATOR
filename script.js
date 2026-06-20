@@ -1,5 +1,6 @@
 let BASE_URL = "https://api.currencyapi.com/v3/latest?apikey=cur_live_Ud3GCkckKGv1Yxx92WbovBzZnzT3RDF2Ez4sQ2yR&currencies=EUR%2CUSD%2CCAD"
-let dropdown = document.querySelectorAll(".dropDown select")
+let dropdown = document.querySelectorAll(".dropDown select");
+let btn = document.querySelector("button");
 
 
 for (let select of dropdown){
@@ -24,7 +25,9 @@ const flag = (element)=>{
     let currCode = element.value
     let countryCode = countryList[currCode];
     console.log(countryCode)
-    let img = document.querySelector("img");
+    let img = element.parentElement.querySelector("img");
     let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`
     img.src = newSrc;
 }
+
+
