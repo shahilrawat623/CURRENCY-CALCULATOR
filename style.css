@@ -96,3 +96,7 @@ button:hover{
 button:active{
     transform: scale(.98);
 }
+
+.hide{
+    background: transparent;
+}
